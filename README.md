@@ -1,9 +1,9 @@
 ## Description
 Microservice which receives message from public HTTP POST endpoint and sends it to RMQ queue. Also listens another RMQ queue and prints messages from here
 So if we run two such microservices we can exchange messages between them like so
-[Insomnia, postman, ...] -(HTTP)-> [MS1] -(RMQ)-> [MS2] ---> console.log
-and 
-[Insomnia, postman, ...] -(HTTP)-> [MS2] -(RMQ)-> [MS1] ---> console.log
+<br />[Insomnia, postman, ...] -(HTTP)-> [MS1] -(RMQ)-> [MS2] ---> console.log
+<br />and 
+<br />[Insomnia, postman, ...] -(HTTP)-> [MS2] -(RMQ)-> [MS1] ---> console.log
 
 
 ## Start
