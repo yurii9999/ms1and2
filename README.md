@@ -16,4 +16,13 @@ $ npm run startTwoMs
 ```
 
 <br />This will run MS1 on port 3001 and MS2 on port 3002
-<br />To check that services are running, you can send simple get requenst http://localhost:3001/ and http://localhost:3001/ from browser
+
+## Usage
+<br /> Post request expected body: 
+```
+{
+	"message": "Msg"
+}
+```
+
+<br />To check that services are running, you can send simple get requenst to http://localhost:3001/ and http://localhost:3001/ from browser
