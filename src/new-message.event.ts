@@ -1,3 +1,5 @@
 export class Message {
-    constructor(public readonly message: string) {}
+    constructor(
+        public readonly message: string
+        ) {}
 }
