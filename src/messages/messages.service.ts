@@ -1,10 +1,10 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
-import { HELLO_MESSAGE } from './config/main.config';
+import { HELLO_MESSAGE } from '../config/main.config';
 import { Message } from './new-message.event';
 
 @Injectable()
-export class AppService {
+export class MessagesService {
   getHelloMessage() {
     return HELLO_MESSAGE;
   }
