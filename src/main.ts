@@ -2,10 +2,10 @@ import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-import { LISTEN_QUEUE, PORT, RABBITMQ_URL, SEND_QUEUE } from './config/main.config'
+import { CONFIG, LISTEN_QUEUE, PORT, RABBITMQ_URL, SEND_QUEUE } from './config/main.config'
 
 async function bootstrap() {
-  console.log("Start ms with port ", PORT, " listenQueue ", LISTEN_QUEUE, " sendQueue ", SEND_QUEUE);
+  console.log("Start ms with port ", PORT, " listenQueue ", LISTEN_QUEUE, " sendQueue ", SEND_QUEUE, "\tConfig file: ", CONFIG);
   
   const app = await NestFactory.create(AppModule);
   app.connectMicroservice({

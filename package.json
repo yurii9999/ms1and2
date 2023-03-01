@@ -9,7 +9,7 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "dontusestart": "nest start",
-    "startTwoMs": "(PORT=3001 LISTEN_QUEUE='queue1' SEND_QUEUE='queue2' HELLO_MESSAGE='hello from ms1' nest start) & (PORT=3002 LISTEN_QUEUE='queue2' SEND_QUEUE='queue1' HELLO_MESSAGE='hello from ms2' nest start)",
+    "startTwoMs": "(CONFIG=ms1.env nest start) & (CONFIG=ms2.env nest start)",
     "dontusestart:dev": "nest start --watch",
     "dontusestart:debug": "nest start --debug --watch",
     "dontusestart:prod": "node dist/main",
@@ -28,6 +28,7 @@
     "@nestjs/swagger": "^6.2.1",
     "amqp-connection-manager": "^4.1.11",
     "amqplib": "^0.10.3",
+    "dotenv": "^16.0.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   },
